@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events | OURI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        /* CARD ONLY (no images inside) */
+        .event-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .event-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .event-card p {
+            margin: 0;
+        }
+
+        /* OUTSIDE IMAGE CAROUSEL */
+        .event-gallery {
+            margin-top: 12px;
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            padding-bottom: 8px;
+            scroll-snap-type: x mandatory;
+        }
+
+        .event-gallery img {
+            flex: 0 0 auto;
+            width: 220px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            scroll-snap-align: start;
+        }
+
+        /* GROUP WRAPPER (card + gallery together) */
+        .event-block {
+            display: flex;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container header-container">
+
+        <div class="logo-section">
+            <img src="images/OURI Logo.png" alt="OURI Logo">
+            <div>
+                <h1>Events</h1>
+                <p>Florida International University</p>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="urs.html">URS</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<section class="events-hero">
+    <div class="container">
+        <h1>OURI Events</h1>
+        <p>
+            Showcasing undergraduate research, professional development,
+            and scientific engagement across Florida International University.
+        </p>
+    </div>
+</section>
+
+<section class="event-block">
+    <div class="container">
+        <h3>Summer Research Poster Showcase</h3>
+        <p>
+            The Summer Research Poster Showcase is an annual event hosted by the
+            Office of Undergraduate Research and Internships (OURI) that highlights
+            the research achievements of undergraduate students and provides a
+            platform for sharing summer research experiences with the FIU community.
+            Open to Biology and Marine Biology students who have participated in a
+            summer research program or internship, the showcase features a poster
+            session highlighting student projects across a variety of scientific
+            disciplines.
+        </p>
+
+        <p>
+           The inaugural showcase was held in 2025 and featured 15 student presenters
+            who shared their research experiences and projects with faculty, peers,
+            and members of the university community. Following the success of the first
+            event, the Summer Research Poster Showcase will return in 2026, continuing
+            to provide students with the opportunity to strengthen their scientific
+            communication skills, showcase their scholarly achievements, and celebrate
+            the impact of undergraduate research at FIU.
+        </p>
+
+        <p>
+            <strong>Coming Soon: Summer Research Poster Showcase 2026</strong><br>
+            Join us on September 25, 2026, from 9:00 AM–4:30 PM as we celebrate the
+            next cohort of undergraduate researchers and their summer research
+            accomplishments.
+        </p>
+
+        <div class="event-gallery">
+            <img src="images/poster-1.png" alt="Poster presenter">
+            <img src="images/poster-2.png" alt="Poster presenter">
+            <img src="images/poster-3.png" alt="Student panel">
+        </div>
+    </div>
+</section>
+
+<section class="event-block">
+    <div class="container">
+        <h3>Annual OURI Biology Research Forum</h3>
+        <p>
+            The OURI Biology Research Forum is an annual research symposium held each
+            December that celebrates undergraduate research and scholarly achievement
+            within the biological sciences. The event is open to Biology and Marine
+            Biology students, as well as students participating in research programs
+            supported by OURI or engaged in faculty-mentored research experiences.
+        </p>
+
+        <p>
+            Students have the opportunity to present their work through both poster and
+            oral presentations, allowing them to develop scientific communication skills
+            and engage with peers, faculty, and the broader research community.
+        </p>
+
+        <p>
+            The forum continues to serve as a central platform for recognizing student
+            contributions to research, highlighting undergraduate achievements, and
+            fostering a strong culture of research and scholarly engagement within the
+            FIU community.
+        </p>
+
+        <div class="event-gallery">
+            <img src="images/forum-1.jpg" alt="Student presenter">
+            <img src="images/forum-2.jpg" alt="Student presenter">
+            <img src="images/forum-3.jpg" alt="Student presenter">
+        </div>
+    </div>
+</section>
+
+<section class="event-block">
+    <div class="container">
+        <h3>STEMinism: Women in Science Seminar Series</h3>
+        <p>
+            The STEMinism: Women in Science Seminar Series celebrates and highlights
+            the achievements, experiences, and contributions of women in STEM fields
+            while inspiring the next generation of scientists and researchers. The
+            annual seminar brings together women at various stages of their academic
+            and professional careers to share their perspectives on navigating and
+            succeeding in STEM.
+        </p>
+
+        <p>
+            The 14th Annual Women in Science Seminar featured a keynote address by
+            Dr. Madelen Diaz, followed by a panel discussion with undergraduate
+            students, graduate students, and practicing physicians who shared insights
+            into their educational pathways, professional experiences, challenges, and
+            accomplishments.
+        </p>
+
+        <p>
+            The seminar provided students with the
+            opportunity to engage with inspiring role models, build professional
+            connections, and gain valuable perspectives from women making an impact
+            across STEM disciplines.
+        </p>
+
+        <div class="event-gallery">
+            <img src="images/steminism-1.jpg" alt="Keynote Speaker">
+            <img src="images/steminism-2.jpg" alt="Panel">
+            <img src="images/steminism-3.jpg" alt="Planning Committee">
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>Florida International University | Department of Biological Sciences</p>
+    </div>
+</footer>
+
+</body>
+</html>
